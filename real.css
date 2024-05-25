@@ -1,0 +1,49 @@
+.intro
+{
+    background-image: url("https://i.pinimg.com/originals/b2/d3/c0/b2d3c0958884256375f4291bd8814ab7.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+}
+p
+{
+    font-size: large;
+}
+#quotes
+{
+    color:#f40051;
+    font-size:55px;
+}
+
+.info
+{
+    color:rgb(242, 245, 242);
+    font-size:20px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+.last
+{
+   background-color: rgb(31, 29, 29);
+}
+.details
+{
+    background-image: url("https://img.pikbest.com/backgrounds/20220119/real-estate-city-building-modern-background_6240027.jpg!sw800");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#introimg{
+    border-radius: 50%;
+}
+#mainben{
+    color:#f40051;
+    font-size:45px;
+}
+#detailsimg{
+    border-radius: 25%;
+    margin-bottom: 40px;
+}

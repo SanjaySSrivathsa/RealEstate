@@ -1,0 +1,21 @@
+.mainheading{
+    text-align: center;
+    color: gold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.l{
+color:gold;
+}
+.c{
+    border-radius: 10%;
+    border-color: black;
+    border-width: 5px;
+    margin-left:100px;
+    margin-top:20px;
+}
+body{
+    background-image: url("https://img.freepik.com/free-photo/grunge-black-concrete-textured-background_53876-124541.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1705190400&semt=ais");
+    background-repeat: repeat;
+    
+    background-size: 100% 100%;
+}

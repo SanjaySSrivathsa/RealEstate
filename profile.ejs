@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 60px; /* Adjust the padding to accommodate the footer height */
+        }
+
+        #footer {
+            background-color: rgb(44, 42, 42);
+            
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+       
+
+     
+       
+        .profile-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            overflow: hidden;
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .user-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .user-info h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        .user-info p {
+            color: #666;
+        }
+
+        .recent-activities {
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+        .activity {
+            margin-bottom: 10px;
+        }
+
+        .activity h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .activity p {
+            color: #666;
+        }
+
+        /* Style for table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+        }
+        .d{
+            font-family: "Times New Roman", Times, serif;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header><h1>USER PROFILE</h1></header>
+    <section id="footer" class="last">
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-0 border-top ml-0 mr-0">
+            <p class="col-md-4 mb-0 text-warning">© Real Estate, Inc</p>
+        
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+        
+            <ul class="nav col-md-4 justify-content-end">
+              <li class="nav-item"><a href="/" class="nav-link px-2 text-warning">Home</a></li>
+              <li class="nav-item"><a href="/aboutr" class="nav-link px-2  text-warning">about</a></li>
+              <li class="nav-item"><a href="/Anlytical" class="nav-link px-2  text-warning">Anlytical</a></li>
+              <li class="nav-item"><a href="/profileupdate" class="nav-link px-2  text-warning">Update Profile</a></li>
+              <li class="nav-item"><a href="/pricing" class="nav-link px-2  text-warning">Book Again</a></li>
+            </ul>
+          </footer>
+        </div>
+      </section>
+
+    <div class="profile-container">
+        <div class="profile-picture">
+            <img
+                src="https://st4.depositphotos.com/1842549/21163/i/450/depositphotos_211633178-stock-photo-user-profile-icon-user-profile.jpg"
+                alt="Profile Picture">
+        </div>
+
+        <div class="recent-activities">
+            <h3 class="d">NAME: <%= FNAME %></h3>
+            <h3 class="d">PHONE: <%= phone %></h3>
+            <table>
+                <tr>
+                    <th>Area</th>
+                    <th>Dimensions(sq.ft)</th>
+                    <th>Site ID</th>
+                </tr>
+                <% for (let i = 0; i < AREA.length; i++) { %>
+                    <tr>
+                        <td><%= AREA[i] %></td>
+                        <td><%= DIMEN[i] %></td>
+                        <td><%= SITENO[i] %></td>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+    
+</body>
+
+</html>
